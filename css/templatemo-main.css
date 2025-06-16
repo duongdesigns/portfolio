@@ -629,6 +629,12 @@ nav a:hover::before {
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #fff;
+	letter-spacing: 0.5px;
+	border-bottom: 2px solid #fff;
+	display: inline-block;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	margin-top: 0px;
 }
 
 .fifth-content .container-fluid {
