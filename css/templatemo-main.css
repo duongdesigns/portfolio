@@ -468,7 +468,6 @@ nav a:hover::before {
 .third-content {
 	text-align: left;
 	padding: 30px;
-	overflow: hidden !important;
 }
 
 .third-content .container-fluid {
