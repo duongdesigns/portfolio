@@ -624,7 +624,12 @@ nav a:hover::before {
 	margin-bottom: 0px;
 }
 
-
+.forth-content h2{
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+}
 
 .fifth-content .container-fluid {
 	padding-left: 0px;
