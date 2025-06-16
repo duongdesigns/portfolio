@@ -562,6 +562,12 @@ nav a:hover::before {
 	height: 20vh;
 	object-fit: cover;
 }
+.fourth-content .item video {
+	width: 100%;
+	overflow: hidden;
+	height: 20vh;
+	object-fit: cover;
+}
 
 .fourth-content .item .thumb {
 	position: relative;
