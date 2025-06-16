@@ -401,10 +401,6 @@ nav a:hover::before {
 	background-color: transparent;
 }
 
-.second-content{
-	overflow: hidden !important;
-}
-
 .second-content .container-fluid {
 	padding-right: 0px;
 	padding-left: 0px;
