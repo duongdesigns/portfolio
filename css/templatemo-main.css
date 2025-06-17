@@ -319,7 +319,7 @@ nav a:hover::before {
 
 .first-content {
 	padding: 100px;
-	text-align: left;
+	text-align: justify;
 	padding-top: 13%;
 }
 
@@ -353,7 +353,6 @@ nav a:hover::before {
 	letter-spacing: 2px;
 	line-height: 26px;
 	margin-bottom: 20px;
-	text-align: justify;
 }
 
 .first-content em {
@@ -485,7 +484,7 @@ nav a:hover::before {
 }
 
 .third-content .second-section {
-	margin-top: 30px;
+	margin-top: 60px;
 }
 
 .third-content .second-section .right-content {
