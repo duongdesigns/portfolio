@@ -41,7 +41,7 @@
 
     </div>
 
-    
+
     <nav>
         <ul>
             <li><a href="#1"><i class="fa fa-home"></i> <em>Home</em></a></li>
@@ -86,7 +86,7 @@
                         <div class="left-content">
                             <h2>Über mich</h2>
                             <p>
-                                Hallo! Ich bin Ngoc Kai Duong –  Mediengestalter mit Schwerpunkt
+                                Hallo! Ich bin Ngoc Kai Duong – Mediengestalter mit Schwerpunkt
                                 Designkonzeption und einer Leidenschaft für durchdachte Gestaltung.
                             </p>
                             <p>
@@ -417,7 +417,7 @@
                         <div class="col-md-4 col-sm-6">
                             <div class="item">
                                 <div class="thumb">
-                                    <a href="img/Projektbilder/Marvel_Intro.webm" data-lightbox="image-1">
+                                    <a href="img/Projektbilder/Marvel_Intro.webm" class="glightbox" data-type="video">
                                         <div class="hover-effect">
                                             <div class="hover-content">
                                                 <h2>Animation</h2>
@@ -540,6 +540,10 @@
                 log: function () { }
             };
         }
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            type: 'video'
+        });
     </script>
 </body>
 
