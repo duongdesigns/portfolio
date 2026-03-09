@@ -19,6 +19,12 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 </head>
 
 <body>
@@ -415,16 +421,19 @@
                     <div class="row">
                         <h2>Videos</h2>
                         <div class="col-md-4 col-sm-6">
+                            <!-- Video Item -->
                             <div class="item">
                                 <div class="thumb">
                                     <a href="img/Projektbilder/Marvel_Intro.webm" class="glightbox" data-type="video">
                                         <div class="hover-effect">
                                             <div class="hover-content">
                                                 <h2>Animation</h2>
-                                                <p>Particle Effect eines Logos in Adobe After Effect</p>
+                                                <p>Particle Effect eines Logos in Adobe After Effects</p>
                                             </div>
                                         </div>
                                     </a>
+
+                                    <!-- Vorschau-Video -->
                                     <div class="image">
                                         <video width="100%" autoplay muted loop>
                                             <source src="img/Projektbilder/Marvel_Intro.webm" type="video/webm">
@@ -542,7 +551,8 @@
         }
         const lightbox = GLightbox({
             selector: '.glightbox',
-            type: 'video'
+            type: 'video',
+            autoplayVideos: true
         });
     </script>
 </body>
