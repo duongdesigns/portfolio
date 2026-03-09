@@ -411,7 +411,7 @@ nav a:hover::before {
 
 .second-content .right-image img {
 	max-width: 100%;
-	min-width: 100%;
+	height: auto;
 	overflow: hidden;
 	float: right;
 	align-items: center;
