@@ -489,45 +489,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="img/cornhub-site.webm" data-lightbox="image-1">
-                                        <div class="hover-effect">
-                                            <div class="hover-content">
-                                                <h2>Webseite gestalten und coden</h2>
-                                                <p>Diese Webseite wurde von Hand codiert zur einfachen Importierung in
-                                                    gängige Content-Management-Systeme</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div class="image">
-                                        <video width="100%" autoplay loop>
-                                            <source src="img/cornhub-site.webm" type="video/webm">
-                                        </video>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="item">
-                                <div class="thumb">
-                                    <a href="img/website-agency.webm" data-lightbox="image-1">
-                                        <div class="hover-effect">
-                                            <div class="hover-content">
-                                                <h2>Webseite codieren</h2>
-                                                <p>Eine CMS konforme Webseite von Hand gecoded.</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div class="image">
-                                        <video width="100%" autoplay loop>
-                                            <source src="img/website-agency.webm" type="video/webm">
-                                        </video>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -599,7 +560,20 @@
         const lightbox = GLightbox({
             selector: '.glightbox',
             type: 'video',
-            autoplayVideos: true
+            autoplayVideos: true,
+            plyr: {
+                muted: true,
+                clickToPlay: false // verhindert dass Klick auf Video Ton aktiviert
+            },
+            onOpen: () => {
+                // Stellt sicher, dass jedes Video beim Öffnen stumm ist
+                setTimeout(() => {
+                    const plyrVideos = document.querySelectorAll('.glightbox-container video');
+                    plyrVideos.forEach(v => {
+                        v.muted = true;
+                    });
+                }, 100);
+            }
         });
     </script>
 </body>
